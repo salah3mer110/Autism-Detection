@@ -6,12 +6,12 @@ const AboutAndContactContent = {
   title: "Get in Touch",
   desc: "Have questions? Need support? Get in touch with us!",
 };
-function ContactUs() {
+function ContactUs({ onShowSignIn }) {
   return (
     <div>
-      <div className="relative bg-[var(--primary)] font-nunito min-h-screen">
+      <div className="pt-24 relative bg-[var(--primary)] font-nunito min-h-screen">
         <section className="w-[1350px] mx-auto">
-          <Header />
+          <Header onShowSignIn={onShowSignIn} />
         </section>
         <section className="h-[600px]">
           <AboutAndContact AboutAndContactContent={AboutAndContactContent} />

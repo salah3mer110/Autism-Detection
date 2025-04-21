@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../assets/Images/Home/hero.jpeg";
 import Button from "./common/Button";
 function HeroSection() {
@@ -14,7 +15,9 @@ function HeroSection() {
             behavior and recommending personalized activities to enhance their
             development
           </p>
-          <Button>Upload a Video +</Button>
+          <Link to="/UploadVideo">
+            <Button>Upload a Video +</Button>
+          </Link>
         </div>
       </div>
       <div className=" h-[704px] w-[704px]  overflow-hidden">

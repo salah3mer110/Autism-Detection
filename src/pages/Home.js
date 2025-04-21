@@ -7,9 +7,9 @@ import Partner from "../components/Partner";
 import Footer from "../layouts/Footer";
 import Star from "../components/iconsComponents/Star";
 
-function Home() {
+function Home({ onShowSignIn }) {
   return (
-    <div className=" bg-[var(--primary)] font-nunito min-h-screen">
+    <div className="pt-24 bg-[var(--primary)] font-nunito min-h-screen">
       <Star
         className={`absolute z-60 fill-[#F6BC3F] w-[27px] h-[27px] top-[500px] left-[43px]`}
       />
@@ -24,7 +24,7 @@ function Home() {
         className={`fill-[var(--secondary)] w-[27px] h-[27px] absolute z-60 top-[2034px] right-[160px]`}
       />
       <section className="w-[1350px] mx-auto pb-20">
-        <Header />
+        <Header onShowSignIn={onShowSignIn} />
         <HeroSection />
       </section>
       <section>

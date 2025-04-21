@@ -5,12 +5,12 @@ const AboutAndContactContent = {
   title: "Profile",
   desc: "",
 };
-const containerHeight = 317;
-function Profile() {
+
+function Profile({ onShowSignIn }) {
   return (
-    <div className="relative bg-[var(--primary)] font-nunito min-h-screen">
+    <div className="pt-24  relative bg-[var(--primary)] font-nunito min-h-screen">
       <section className="w-[1350px] mx-auto">
-        <Header />
+        <Header onShowSignIn={onShowSignIn} />
       </section>
       <section className="h-[317px]">
         <AboutAndContact AboutAndContactContent={AboutAndContactContent} />
